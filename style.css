@@ -61,6 +61,7 @@ form button:hover {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    transition: all 500ms ease;
 }
 
 .todo li{
@@ -84,4 +85,16 @@ form button:hover {
 }
 .check-btn:hover {
     background: #1cdb66;
+}
+
+.fa-trash, .fa-check {
+    pointer-events: none;
+}
+
+.completed {
+    opacity: 0.5; 
+}
+.fall {
+    transform: translateY(5rem) rotateZ(10deg);
+    opacity: 0;
 }
