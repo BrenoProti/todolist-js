@@ -5,7 +5,7 @@
 }
 body {
     font-family: 'Poppins', sans-serif;
-    background-image: linear-gradient(to right, rgb(0, 81, 173), rgb(0, 135, 153));
+    background-image: linear-gradient(120deg, rgb(0, 88, 160), rgb(0, 110, 124));
     color: #fff;
     min-height: 100vh;
 }
@@ -23,14 +23,14 @@ header, form {
 
 form input, form button {
     padding: 0.5rem;
-    font-size: 1.5rem;
+    font-size: 1.7rem;
     border: none;
     outline: none;
     background: #fff;
 }
 
 form button {
-    color: #26aadd; 
+    color: #009ce4; 
     background: white; 
     cursor: pointer;
     
@@ -38,6 +38,50 @@ form button {
 }
 
 form button:hover {
-    color: #1788b4; 
-    background: rgb(216, 216, 216); 
+    color: #fff; 
+    background: #009ce4; 
+}
+
+.todo-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.todo-list {
+    min-width: 30%;
+    list-style: none;
+}
+
+.todo{
+    margin: 0.5rem;
+    background: white;
+    color: #000;
+    font-size: 1.5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.todo li{
+    flex: 1;
+    padding-left: .8rem;
+}
+
+.trash-btn, .check-btn {
+    background: #009ce4;
+    color: #fff;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 1rem;
+    font-size: 1rem;
+    transition: all 200ms ease;
+}
+
+.trash-btn:hover {
+    background: #ff4c5b;
+}
+.check-btn:hover {
+    background: #1cdb66;
 }
